@@ -1,0 +1,20 @@
+https://replit.com/@yeahitsthattime/StripedKindGraduate#main.py
+
+import math
+print("This program calculates the distance a suspended object falls","given a gravity and time")
+
+
+gravity=input("enter gravity of item ")# Get gravity from user
+gravity = float(gravity)# Convert string to int
+
+fps= input("enter games frame rate ")# Get fps from user
+fps= float(fps)# Convert string to int
+
+frames= input("enter the amount of frames for it to run ")# Get number of frames from user
+frames= float(frames)# Convert string to int
+
+time= frames/fps# Calculate time object is falling
+
+distance= 1/2 * gravity * time ** 2# Calculate distance in pixels objecthas fallen
+
+print("It will drop", distance, "pixels in", time, "seconds")# Output time to user
